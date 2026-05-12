@@ -21,7 +21,7 @@ For any questions regarding this repository, please contact [jchenhu@connect.ust
 ## :rocket: Updates
 
 - The code for pretraining, finetuning, and evaluation is released.
-- Pretrained and finetuned model weights are released on [HuggingFace](https://huggingface.co/HajihajihaJimmy/DeepSparse).
+- Pretrained and finetuned model weights are released on [HuggingFace](https://huggingface.co/datasets/HajihajihaJimmy/DeepSparse).
 
 ## :star: Highlights
 
@@ -99,7 +99,7 @@ Runs evaluation on all datasets and view counts using Stage 2 checkpoints at `lo
 
 Pretrained and finetuned checkpoints are hosted on HuggingFace and can be downloaded for direct inference:
 
-**[HuggingFace — HajihajihaJimmy/DeepSparse](https://huggingface.co/HajihajihaJimmy/DeepSparse)**
+**[HuggingFace — HajihajihaJimmy/DeepSparse](https://huggingface.co/datasets/HajihajihaJimmy/DeepSparse)**
 
 Place the downloaded `logs/` folder in the project root. See [`logs/README.md`](logs/README.md) for a description of each checkpoint.
 
@@ -107,7 +107,7 @@ To download with `huggingface-cli`:
 
 ```bash
 pip install huggingface-hub hf-transfer
-HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download HajihajihaJimmy/DeepSparse --local-dir ./logs
+HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download --repo-type dataset HajihajihaJimmy/DeepSparse --local-dir ./logs
 ```
 
 ## :blue_book: Citation
